@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <meta name="description" content="Ejercicio de maquetacion para Axlot">
+    <link rel="author" href="https://github.com/Al3busse">
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <div id="max-size">
+        <!-- NavBar Start-->
+        <nav class="navbar navbar-expand-xs">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-hamburger-icon"><img src="./src/hamburger-menu.svg" alt="menu" /></span>
+            </button>
+            <a class="navbar-brand" href="#">Kid Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler2"
+                aria-controls="navbarToggler2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-vertical-icon"><img src="./src/vertical-ellipsis.svg" alt="secondary menu"></span>
+            </button>
+            <!-- No funcional sin scrips de boostrap -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarToggler2">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NavBar End -->
+
+        <!-- Content Start-->
+        <div class="container">
+            <!-- Avatar Section Start -->
+            <section id="section-avatar">
+                <div class="row align-items-center no-padding">
+                    <div class="col-3">
+                        <img src="./src/circle-crab.svg" alt="avatar image" class="img-avatar" />
+                    </div>
+                    <div class="col-4 no-padding">
+                        <h3 class="name-avatar">
+                            John
+                        </h3>
+                    </div>
+                    <div class="col-5 text-align-right">
+                        <img src="./src/badges.svg" alt="badges" class="img-badges" />
+                        <span class="badges-counter">
+                            +5
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <!-- Avatar Section End -->
+
+            <!-- Tasks Section Start -->
+            <section id="section-tasks">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Day Selector Start-->
+                        <div class="row">
+                            <div class="col pr-0">
+                                <button type="button" class="btn btn-block button-day-unselected-left">
+                                    Yesterday
+                                </button>
+                            </div>
+                            <div class="col no-padding">
+                                <button type="button" class="btn btn-block button-day-selected">
+                                    Today
+                                </button>
+                            </div>
+                            <div class="col pl-0">
+                                <button type="button" class="btn btn-block button-day-unselected-right">
+                                    Tomorrow
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Day Selector End -->
+
+                        <!-- Tasks Cards Start -->
+                        <div class="row tasks">
+                            <div class="col-12">
+                                <div class="row card-task no-gutters">
+                                    <div class="col-3 align-self-center">
+                                        <div class="circle-orange">
+                                            <img src="./src/sofa.svg" alt="sofa icon" id="svg-sofa" />
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h3 class="h3-task-unchecked">
+                                            Change Towels
+                                        </h3>
+                                        <p class="p-task-category">
+                                            Bathroom
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type='checkbox' name='thing' value='valuable' id="checkbox1" /><label
+                                            for="checkbox1"></label>
+                                    </div>
+                                </div>
+                                <div class="row card-task no-gutters">
+                                    <div class="col-3 align-self-center">
+                                        <div class="circle-gray">
+                                            <img src="./src/paw.svg" alt="paw icon" id="svg-paw" />
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h3 class="h3-task-checked">
+                                            Feed Cat
+                                        </h3>
+                                        <p class="p-task-category">
+                                            Pets
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type='checkbox' name='thing' value='valuable' id="checkbox2"
+                                            checked /><label for="checkbox2"></label>
+                                    </div>
+                                </div>
+                                <div class="row card-task no-gutters">
+                                    <div class="col-3 align-self-center">
+                                        <div class="circle-orange">
+                                            <img src="./src/toilet.svg" alt="toiler icon" id="svg-toilet" />
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h3 class="h3-task-unchecked">
+                                            Swipe Floor
+                                        </h3>
+                                        <p class="p-task-category">
+                                            Living Room
+                                        </p>
+                                    </div>
+                                    <div class="col-2">
+                                        <input type='checkbox' name='thing' value='valuable' id="checkbox3" /><label
+                                            for="checkbox3"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tasks Cards End-->
+                    </div>
+                </div>
+            </section>
+            <!-- Tasks Section End-->
+
+            <hr class="hr1">
+
+            <!-- Footer Section Start  -->
+            <section id="section-footer">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-8">
+                                <h3 class="footer-allowance">
+                                    This week allowance
+                                </h3>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="footer-allowance footer-allowance-number text-align-right">
+                                    $20.00
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <h3 class="footer-earns">
+                                    Totally earned
+                                </h3>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="footer-earns text-align-right">
+                                    $250.00
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer Section End-->
+        </div>
+        <!-- Content End-->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+:root {
+  --main-orange-color: #f26c4f;
+  --main-gray-color: #a4a1a1;
+  --secondary-gray-color: #e8e8e8;
+}
+
+#max-size {
+  width: 360px;
+  height: 667px;
+  margin: auto;
+  border: 1px solid gray;
+}
+
+.container {
+  padding-left: 20px !important;
+  padding-right: 28px !important;
+}
+
+/* NavBar*/
+
+.navbar {
+  background: var(--main-orange-color);
+  height: 80px;
+  padding: 0.5rem !important;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1.5rem 2rem 0 -1rem !important;
+}
+
+.navbar-toggler {
+  margin: 1.5rem 0 0 0 !important;
+  border-color: transparent !important;
+}
+
+/* Avatar Section */
+
+#section-avatar {
+  margin: 27px 6px 42px 6px;
+}
+
+.img-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin-left: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.name-avatar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--main-orange-color);
+  font-size: 24px;
+  margin: auto;
+}
+
+.badges-counter {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-gray-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Tasks Section */
+
+#section-tasks {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.button-day-unselected-left,
+.button-day-unselected-right {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: var(--main-gray-color);
+  border: none !important;
+  background: var(--secondary-gray-color);
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.button-day-unselected-left {
+  border-radius: 50px 0 0 50px !important;
+  padding-right: 5px !important;
+}
+
+.button-day-unselected-right {
+  border-radius: 0 50px 50px 0 !important;
+  padding-left: 5px !important;
+}
+
+.button-day-selected {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #fafafa;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent linear-gradient(180deg, #f26c4f 0%, #fe2c00 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.tasks {
+  margin-top: 10px;
+}
+
+.card-task {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  margin: 15px 15px 0 15px;
+}
+
+.h3-task-unchecked,
+.h3-task-checked {
+  font-family: "Open Sans";
+  font-size: 18px;
+  margin: 17.5px 0 0 20px;
+  line-height: 24px;
+}
+
+.h3-task-unchecked {
+  color: var(--main-orange-color);
+}
+
+.h3-task-checked {
+  color: var(--main-gray-color);
+}
+
+.p-task-category {
+  font-family: "Open Sans";
+  font-size: 11px;
+  color: var(--main-gray-color);
+  text-transform: uppercase;
+  margin: 0 0 19.5px 20px;
+  line-height: 15px;
+}
+
+.circle-gray,
+.circle-orange {
+  width: 53px;
+  height: 53px;
+  background-repeat: no-repeat;
+  background-size: 53px 53px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50%;
+  margin: 10px 0 10px 20px;
+}
+
+.circle-orange {
+  background-image: url("./src/circle-orange.svg");
+}
+
+.circle-gray {
+  background-image: url("./src/circle-gray.svg");
+}
+
+#sofa {
+  width: 32px;
+  height: 17px;
+}
+
+#svg-paw {
+  width: 25px;
+  height: 21px;
+}
+
+#svg-toilet {
+  width: 21px;
+  height: 24px;
+}
+
+label {
+  margin: 10px 8px 0 0;
+  float: right;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  background: url("./src/check-empty-box.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+input[type="checkbox"]:checked + label {
+  background: url("./src/check-checked-box.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+.hr1 {
+  border: 0.5px solid var(--main-gray-color);
+  margin-top: 25px;
+}
+
+/* Footer Section */
+
+#section-footer {
+  margin: 0px 0px 54px 0px;
+}
+
+.footer-allowance {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-orange-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.footer-allowance-number {
+  font-size: 18px;
+}
+
+.footer-earns {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-gray-color);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+}
+
+.text-align-right {
+  text-align: right;
+}
