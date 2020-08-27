@@ -157,11 +157,11 @@
 }
 
 .circle-orange {
-  background-image: url("./src/circle-orange.svg");
+  background-image: url("./sources/circle-orange.svg");
 }
 
 .circle-gray {
-  background-image: url("./src/circle-gray.svg");
+  background-image: url("./sources/circle-gray.svg");
 }
 
 #sofa {
@@ -189,7 +189,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + label {
-  background: url("./src/check-empty-box.svg");
+  background: url("./sources/check-empty-box.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 25px;
@@ -199,7 +199,7 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"]:checked + label {
-  background: url("./src/check-checked-box.svg");
+  background: url("./sources/check-checked-box.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 25px;
